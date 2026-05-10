@@ -1,0 +1,7 @@
+{
+  "name": "example-5852",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "npx -y live-server docs"
+  }
+}

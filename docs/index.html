@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Raylib WASIGL</title>
+    <style>
+      canvas {
+        border: 1px solid #ccc;
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script type="importmap">
+      {
+        "imports": {
+          "@easywasm/wasi": "https://esm.sh/@easywasm/wasi",
+          "@easywasm/gl": "https://esm.sh/@easywasm/gl@0.0.4"
+        }
+      }
+    </script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
