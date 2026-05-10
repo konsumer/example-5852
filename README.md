@@ -9,5 +9,5 @@ cd raylib
 zig build -Dplatform=wasigl -Dtarget=wasm32-wasi
 cd ..
 
-/opt/wasi-sdk/bin/clang -Wl,--initial-memory=4194304 -Wl,--allow-undefined -Wl,--export=update -Wl,--export=malloc -I raylib/src -L raylib/zig-out/lib -lraylib example.c -o docs/example.wasm
+/opt/wasi-sdk/bin/clang -O3 -Wl,--initial-memory=4194304 -Wl,--allow-undefined -Wl,--export=update -Wl,--export=malloc -I raylib/src -L raylib/zig-out/lib -lraylib example.c -o docs/example.wasm
 ```
